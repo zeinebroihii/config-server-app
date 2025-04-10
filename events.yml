@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/mysql-db-events?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://mysql-db-events:3306/events?useSSL=false&serverTimezone=UTC&allowPublicKey
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
