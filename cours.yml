@@ -15,9 +15,11 @@ spring:
     database-platform: org.hibernate.dialect.MySQL8Dialect
   stripe:
     key: ${STRIPE_SECRET_KEY}
+
   ai:
     openai:
       base-url: https://openrouter.ai/v1
       api-key: ${OPENROUTER_API_KEY}
       model: meta-llama/llama-3.1-8b-instruct
-
+  autoconfigure:
+    exclude: org.springframework.ai.autoconfigure.openai.OpenAiAutoConfiguration
