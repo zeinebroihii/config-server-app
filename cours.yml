@@ -15,10 +15,6 @@ spring:
     database-platform: org.hibernate.dialect.MySQL8Dialect
   stripe:
     key: ${STRIPE_SECRET_KEY}
-  redis:
-    host: redis
-    port: 6379
-    timeout: 60000
   ai:
     openai:
       base-url: https://openrouter.ai/v1
