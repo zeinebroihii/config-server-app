@@ -20,5 +20,8 @@ spring:
       base-url: https://openrouter.ai/v1
       api-key: ${OPENROUTER_API_KEY}
       model: meta-llama/llama-3.1-8b-instruct
+    opener:
+        key: ${OPENAI_API_KEY}
+        base-url: https://api.openai.com/v1
   autoconfigure:
     exclude: org.springframework.ai.autoconfigure.openai.OpenAiAutoConfiguration
