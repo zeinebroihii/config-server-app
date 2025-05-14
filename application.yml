@@ -3,7 +3,7 @@ eureka:
     healthcheck:
       enabled: true
     service-url:
-      defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
+      defaultZone: ${DISCOVERY_SERVICE_URL:http://eureka.default.svc.cluster.local:8761/eureka}
 
 logging:
   level:
